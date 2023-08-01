@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Lugrasimo&display=swap);
+
+body {
+  font-family: Lugrasimo, serif;
+  background: linear-gradient(90deg, rgba(81, 22, 239, 0.8) 0%, #000000 100%);
+}
+
+p {
+  color: aquamarine;
+}
+
+.nav-link {
+  color: aquamarine;
+}
+.navbar-nav .nav-link.active {
+  color: rgb(15, 199, 212);
+}
+
+.navbar-brand img {
+  width: 50px;
+}
+
+.navbar-toggler {
+  background-color: rgb(15, 199, 212);
+}
+
+.card {
+  box-shadow: -14px 21px 21px 19px rgba(26, 8, 194, 0.77);
+  background: linear-gradient(270deg, rgba(81, 22, 239, 0.8) 0%, #020008 100%);
+  color: aquamarine;
+}
+
+.sidebar,
+.btn-outline-primary {
+  color: aquamarine;
+  background: linear-gradient(270deg, rgba(81, 22, 239, 0.8) 0%, #020008 100%);
+}
+
+.card a {
+  text-decoration: none;
+  color: aquamarine;
+}
+.slide-text,
+.footer-text {
+  color: aquamarine;
+  margin: auto auto;
+}
+.media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.call-anim {
+  box-shadow: -14px 21px 21px 19px rgba(26, 8, 194, 0.77);
+  animation: call 2s ease 0s infinite normal none;
+}
+@keyframes call {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+@media (max-width: 755px) {
+  .carousel-indicators {
+    display: none;
+  }
+}
